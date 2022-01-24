@@ -9,7 +9,7 @@ const DriverCard = (props) => {
       <img src={img} alt={`${name} card`} />
       <div>
         <h2>{name}</h2>
-        <Rating>{rating}</Rating>
+        <Rating className="stars">{rating}</Rating>
         <p>
           {car.model} - {car.licensePlate}
         </p>

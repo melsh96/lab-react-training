@@ -83,7 +83,7 @@ function App() {
         />
       </div>
 
-      <div>
+      <div className='stars'>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
