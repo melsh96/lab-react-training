@@ -3,8 +3,18 @@ import profiles from '../data/berlin.json';
 
 const FaceBook = () => {
   const [users, setUsers] = useState(profiles);
+  const [isClicked, setClick] = useState(false);
+
+  const handleClick = (country) => {
+    country === ''
+      ? setUsers(profiles)
+      : setUsers(profiles.filter((e) => e.country === country));
+  };
+
   return (
     <div>
+      <button onClick={() => handleClick('')}>All</button>
+      <button></button>
       {users.map((e, index) => {
         return (
           <div key={index} className="card" style={{ marginBottom: 20 }}>
