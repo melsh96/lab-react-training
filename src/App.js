@@ -9,7 +9,9 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
-import './assets/images/maxence.png';
+import img1 from './assets/images/maxence.png';
+import img2 from './assets/images/maxence-glasses.png';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -132,10 +134,12 @@ function App() {
 
       <h1>Iteration 9 : Clickable Picture</h1>
       <div>
-        <ClickablePicture
-          img="./assets/images/maxence.png"
-          imgClicked="./assets/images/maxence-glasses.png"
-        />
+        <ClickablePicture img1={img2} img2={img1} />
+      </div>
+
+      <h1>Iteration 10 : Dice</h1>
+      <div>
+        <Dice />
       </div>
     </div>
   );
