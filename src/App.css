@@ -62,7 +62,8 @@
 }
 
 .CreditCard {
-  margin: 5px;
+  margin-right: 20px;
+  padding: 20px;
 
 }
 
@@ -73,7 +74,7 @@
 .CreditCardLogo {
   display: flex;
   justify-content: flex-end;
-  padding: 10px;
+
 }
 
 .CreditCardNumber {
@@ -81,6 +82,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+}
+
+.CreditCardNumber>p {
+  align-self: flex-start;
 }
 
 .driver-card {
@@ -108,4 +114,16 @@
 
 .stars {
   font-size: 30px;
+}
+
+.likes {
+  display: flex;
+  gap: 10px;
+  width: 200px;
+  height: 30px;
+}
+
+.like-btn {
+  width: 100px;
+  height: 30px;
 }

@@ -25,10 +25,8 @@ const CreditCard = (props) => {
           <img src={type === 'Visa' ? visa : masterCard} alt={type} style={{width: 100,}} />
         </div>
         <div className='CreditCardNumber'>
-          •••• •••• •••• {number.slice(-5, -1)}
-          <p>Expires {expirationMonth} / {expirationYear} 
-          {bank}</p>
-          <p>{owner}</p>
+         <h1>•••• •••• •••• {number.slice(-5, -1)}</h1> 
+          <p>Expires {expirationMonth} / {expirationYear}    {bank} <br />{owner}</p>
         </div>
      
     </div>

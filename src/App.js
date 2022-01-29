@@ -7,11 +7,15 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import './assets/images/maxence.png';
 
 function App() {
   return (
     <div className="App">
       <div>
+        <h1>Iteration 1 : Id Card</h1>
         <IdCard
           lastName="Doe"
           firstName="John"
@@ -33,22 +37,26 @@ function App() {
         />
       </div>
 
+      <h1>Iteration 2 : Greetings</h1>
       <div>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
       </div>
 
+      <h1>Iteration 3 : Random</h1>
       <div>
-        <Random min={1} max={6}/>
-        <Random min={1} max={100}/>
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
       </div>
 
+      <h1>Iteration 4 : BoxColor</h1>
       <div>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
       </div>
 
-      <div className='credit-card'>
+      <h1>Iteration 5 : Credit Card</h1>
+      <div className="credit-card">
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -57,9 +65,9 @@ function App() {
           bank="BNP"
           owner="Maxence Bouret"
           bgColor="#11aa99"
-          color="white" 
+          color="white"
         />
-    
+
         <CreditCard
           type="Master Card"
           number="0123456789010995"
@@ -70,20 +78,21 @@ function App() {
           bgColor="#eeeeee"
           color="#222222"
         />
-            
+
         <CreditCard
           type="Visa"
           number="0123456789016984"
           expirationMonth={12}
           expirationYear={2019}
-          bank="Name of the Bank"
+          bank="Hello"
           owner="Firstname Lastname"
           bgColor="#ddbb55"
-          color="white" 
+          color="white"
         />
       </div>
 
-      <div className='stars'>
+      <h1>Iteration 6 : Rating</h1>
+      <div className="stars">
         <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
@@ -92,14 +101,15 @@ function App() {
         <Rating>5</Rating>
       </div>
 
+      <h1>Iteration 7 : Driver Card</h1>
       <div>
         <DriverCard
           name="Travis Kalanick"
           rating={4.2}
           img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
           car={{
-            model: "Toyota Corolla Altis",
-            licensePlate: "CO42DE"
+            model: 'Toyota Corolla Altis',
+            licensePlate: 'CO42DE',
           }}
         />
 
@@ -108,9 +118,23 @@ function App() {
           rating={4.9}
           img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
           car={{
-            model: "Audi A3",
-            licensePlate: "BE33ER"
+            model: 'Audi A3',
+            licensePlate: 'BE33ER',
           }}
+        />
+      </div>
+
+      <h1>Iteration 8 : Like Button</h1>
+      <div className="likes">
+        <LikeButton className="like-btn" />
+        <LikeButton />
+      </div>
+
+      <h1>Iteration 9 : Clickable Picture</h1>
+      <div>
+        <ClickablePicture
+          img="./assets/images/maxence.png"
+          imgClicked="./assets/images/maxence-glasses.png"
         />
       </div>
     </div>
