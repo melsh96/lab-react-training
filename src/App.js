@@ -12,6 +12,9 @@ import ClickablePicture from './components/ClickablePicture';
 import img1 from './assets/images/maxence.png';
 import img2 from './assets/images/maxence-glasses.png';
 import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
 
 function App() {
   return (
@@ -140,6 +143,28 @@ function App() {
       <h1>Iteration 10 : Dice</h1>
       <div>
         <Dice />
+      </div>
+
+      <h1>Iteration 11 : Carousel</h1>
+      <div>
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        />
+      </div>
+
+      <h1>Iteration 12 : NumbersTable</h1>
+      <div>
+        <NumbersTable limit={12} />
+      </div>
+
+      <h1>Iteration 13 : FaceBook</h1>
+      <div>
+        <FaceBook />
       </div>
     </div>
   );
